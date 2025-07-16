@@ -2,6 +2,8 @@
 
 My personal WIP dotfiles setup for bootstrapping new development environments.
 
+> WARNING: It's a WIP in progress right now, a lot of things can fail and is still being improved. It was designed to be ran on a clean slate (so if you already have dotfiles or some configs, you might want to run with caution as I'm still improving the backup/restore scripts).
+
 ## Features
 
 - **Quick Setup**: One-command installation for new machines
