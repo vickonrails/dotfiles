@@ -1,0 +1,181 @@
+# Dotfiles .gitignore
+# Exclude sensitive, cache, and temporary files from version control
+
+# =============================================================================
+# History Files (Personal/Machine-specific)
+# =============================================================================
+*_history
+.zsh_history
+.bash_history
+.node_repl_history
+.psql_history
+.python_history
+.mysql_history
+.lesshst
+.wget-hsts
+
+# =============================================================================
+# Session and Runtime Data
+# =============================================================================
+.zsh_sessions/
+.bash_sessions/
+.viminfo
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# Cache Directories
+# =============================================================================
+.cache/
+.local/share/
+.local/state/
+
+# =============================================================================
+# Package Manager Cache/Data
+# =============================================================================
+# Node.js
+.npm/
+.node_gyp/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Rust
+.cargo/registry/
+.cargo/git/
+.cargo/.package-cache
+
+# Python
+.pip/
+__pycache__/
+*.pyc
+*.pyo
+
+# =============================================================================
+# Development Tools Cache
+# =============================================================================
+# Docker
+.docker/
+
+# OrbStack
+.orbstack/
+
+# Ollama (keep config, exclude models)
+.ollama/models/
+.ollama/logs/
+
+# Kubernetes
+.kube/cache/
+.kube/http-cache/
+
+# =============================================================================
+# System Files
+# =============================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.CFUserTextEncoding
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+*.tmp
+
+# =============================================================================
+# Sensitive/Authentication Files
+# =============================================================================
+# SSH (exclude all SSH files to be safe)
+.ssh/
+
+# GPG (exclude private keys, keep config)
+.gnupg/private-keys-v1.d/
+.gnupg/pubring.kbx~
+.gnupg/trustdb.gpg
+.gnupg/random_seed
+.gnupg/.#*
+
+# Credentials and tokens
+.netrc
+.authinfo
+.pgpass
+credentials
+*_token
+*_key
+*.pem
+*.p12
+*.pfx
+
+# AWS
+.aws/credentials
+.aws/config
+
+# Google Cloud
+.config/gcloud/
+
+# =============================================================================
+# Application-Specific Excludes
+# =============================================================================
+# Git (keep global config, exclude local repo data)
+.config/git/credential-*
+
+# Vim/Neovim temporary files
+.vim/tmp/
+.vim/.netrwhist
+.vim/sessions/
+.config/nvim/plugin/
+.config/nvim/.netrwhist
+
+# Tmux
+.tmux/resurrect/
+.tmux/plugins/
+
+# =============================================================================
+# Backup Files
+# =============================================================================
+*.backup
+*.backup.*
+*.bak
+*.orig
+
+# =============================================================================
+# Log Files
+# =============================================================================
+*.log
+logs/
+.logs/
+
+# =============================================================================
+# Temporary Files
+# =============================================================================
+.tmp/
+.temp/
+tmp/
+temp/
+
+# =============================================================================
+# IDE/Editor Files
+# =============================================================================
+.vscode/
+.idea/
+*.sublime-*
+
+# =============================================================================
+# Custom Excludes (Add your specific needs here)
+# =============================================================================
+# Uncomment and customize as needed:
+# .custom_secrets
+# .local_config
+# machine_specific/
